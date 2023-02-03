@@ -521,11 +521,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: LaserLeft
       objectReference: {fileID: 0}
+    - target: {fileID: 8995306836608265737, guid: 84e2e426a65a84e09b4e69ef2509dae2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84e2e426a65a84e09b4e69ef2509dae2, type: 3}
 --- !u!95 &1536966550 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3920470421539723574, guid: cf6855b41af434522be66533defb9063, type: 3}
+  m_PrefabInstance: {fileID: 3920470422806668960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1567459245 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8995306836608265737, guid: 84e2e426a65a84e09b4e69ef2509dae2, type: 3}
+  m_PrefabInstance: {fileID: 1130545570}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1664348754 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3003454532960909850, guid: cf6855b41af434522be66533defb9063, type: 3}
   m_PrefabInstance: {fileID: 3920470422806668960}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &4433941825906774 stripped
@@ -680,5 +694,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 2cbfbbcf3e223344a83f96898c93ddc9, type: 2}
+    - target: {fileID: 7741310977959940318, guid: cf6855b41af434522be66533defb9063, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7741310977959940318, guid: cf6855b41af434522be66533defb9063, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 1664348754}
+    - target: {fileID: 7741310977959940318, guid: cf6855b41af434522be66533defb9063, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 1567459245}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf6855b41af434522be66533defb9063, type: 3}
