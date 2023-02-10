@@ -254,6 +254,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &564506429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 564506430}
+  m_Layer: 0
+  m_Name: SpawnAtRuntime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &564506430
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564506429}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 235.28926, y: 80.036194, z: -52.58866}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,6 +510,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f30b27527baf449ab505b46f1a690b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathVFX: {fileID: 3200836327345539238, guid: 63b54e1a67ee9441994d6ccaa728e4e1, type: 3}
+  parent: {fileID: 564506430}
 --- !u!1001 &1130545570
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -667,6 +700,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f30b27527baf449ab505b46f1a690b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathVFX: {fileID: 3200836327345539238, guid: 63b54e1a67ee9441994d6ccaa728e4e1, type: 3}
+  parent: {fileID: 564506430}
 --- !u!95 &1536966550 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3920470421539723574, guid: cf6855b41af434522be66533defb9063, type: 3}
@@ -694,6 +729,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 227865366180301836, guid: cf6855b41af434522be66533defb9063, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 227865366180301836, guid: cf6855b41af434522be66533defb9063, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.16
