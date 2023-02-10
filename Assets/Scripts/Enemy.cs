@@ -13,9 +13,14 @@ public class Enemy : MonoBehaviour
     ScoreBoard scoreBoard;
 
     void Start() {
-        {
-            scoreBoard = FindObjectOfType<ScoreBoard>();
-        }
+        scoreBoard = FindObjectOfType<ScoreBoard>();
+        AddRigidbody();
+    }
+
+    void AddRigidbody()
+    {
+        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
+        rb.useGravity = false;
     }
 
     void OnParticleCollision(GameObject other) 
@@ -32,11 +37,11 @@ public class Enemy : MonoBehaviour
         GameObject vfx = Instantiate(hitVFX, transform.position, Quaternion.identity);
         vfx.transform.parent = parent;
         hitPoints--;
-        scoreBoard.IncreaseScore(scorePerHit);
     }
 
     void KillEnemy()
     {
+        scoreBoard.IncreaseScore(scorePerHit);
         GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
         vfx.transform.parent = parent;
         Destroy(gameObject);
